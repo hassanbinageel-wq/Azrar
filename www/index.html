@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أزرار — إدارة الخياطة الرجالية</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M10 21v-5.5h4V21"/></symbol>
+<symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 2h12v20l-2-1.5L14 22l-2-1.5L10 22l-2-1.5L6 22Z"/><path d="M9 7h6M9 11h6M9 15h4"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 20c.6-3.4 2.8-5.2 5.5-5.2S13.9 16.6 14.5 20"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.6c2.5.2 4 1.8 4.5 4.4"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h11v10H2Z"/><path d="M13 9h4.5L21 12.5V16h-8"/><circle cx="6.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></symbol>
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.6"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.6"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.6"/></symbol>
+<symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.6"/><circle cx="6" cy="18" r="2.6"/><path d="M8.2 7.6 20 19M8.2 16.4 20 5"/></symbol>
+<symbol id="i-ruler" viewBox="0 0 24 24"><rect x="2.5" y="8.5" width="19" height="7" rx="1.5"/><path d="M6.5 8.5v3M10.5 8.5v4.5M14.5 8.5v3M18.5 8.5v4.5"/></symbol>
+<symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6"/><path d="M4.5 12v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6"/></symbol>
+<symbol id="i-wallet" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M16 12.5h5"/><circle cx="16.5" cy="12.5" r=".8"/><path d="M6 6V5a2 2 0 0 1 2-2h8"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4"/><path d="M4 20h16"/><path d="M8 16v-5M12 16V8M16 16v-3M20 16V6"/></symbol>
+<symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M19 12a7 7 0 0 0-.15-1.4l2-1.55-2-3.45-2.35 1a7 7 0 0 0-2.4-1.4L13.7 2.7h-3.4L9.9 5.2a7 7 0 0 0-2.4 1.4l-2.35-1-2 3.45 2 1.55A7 7 0 0 0 5 12c0 .47.05.94.15 1.4l-2 1.55 2 3.45 2.35-1a7 7 0 0 0 2.4 1.4l.4 2.5h3.4l.4-2.5a7 7 0 0 0 2.4-1.4l2.35 1 2-3.45-2-1.55c.1-.46.15-.93.15-1.4Z"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5Z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+<symbol id="i-contact" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2.5"/><circle cx="12" cy="9.5" r="2.4"/><path d="M7.5 17.5c.6-2.4 2.3-3.6 4.5-3.6s3.9 1.2 4.5 3.6"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12"/><path d="M12 8c-4.5 0-5-4.5-2.5-4.5S12 8 12 8Zm0 0c4.5 0 5-4.5 2.5-4.5S12 8 12 8Z"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.4"/></symbol>
+<symbol id="i-spool" viewBox="0 0 24 24"><path d="M6 4h12M6 20h12M8 4c0 2-1.5 2.6-1.5 4.5v7c0 1.9 1.5 2.5 1.5 4.5m8-16c0 2 1.5 2.6 1.5 4.5v7c0 1.9-1.5 2.5-1.5 4.5"/><path d="M8 9h8M8 12h8M8 15h8"/><path d="M16 12l5.5 1.5"/></symbol>
+<symbol id="i-shirt" viewBox="0 0 24 24"><path d="M9 3.5 4 6l1.5 4L8 9v11h8V9l2.5 1L20 6l-5-2.5c0 1.6-1.2 2.6-3 2.6s-3-1-3-2.6Z"/><path d="M12 9v3"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6.5 2.5h8l4 4v15h-12Z"/><path d="M14 2.5v4.5h4.5"/><path d="M9.5 12h5M9.5 15.5h5"/></symbol>
+<symbol id="i-cash" viewBox="0 0 24 24"><rect x="2.5" y="6.5" width="19" height="11" rx="2"/><circle cx="12" cy="12" r="2.6"/><path d="M6 9.8v.01M18 14.2v.01"/></symbol>
+<symbol id="i-note" viewBox="0 0 24 24"><path d="M4 4.5h13l3 3V19.5H4Z"/><path d="M8 9h8M8 12.5h8M8 16h5"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 8.7a4 4 0 0 1-.5 7.97Z"/><path d="M12 11.5v6M9.5 14l2.5-2.5L14.5 14"/></symbol>
+<symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.4"/></symbol>
+</svg>
+
+<header class="app-header">
+  <div>
+    <div class="title"><img src="assets/logo.png" alt="" style="height:34px;width:auto;display:block"> <span id="hdrShopName">أزرار</span> <span id="syncDot" title="المزامنة" style="display:none;width:10px;height:10px;border-radius:50%;background:#8a8a8a;box-shadow:0 0 6px rgba(0,0,0,.3)"></span></div>
+    <div class="sub">إدارة الخياطة الرجالية الحديثة</div>
+  </div>
+  <button class="btn gold sm" onclick="openInvoiceForm()">+ فاتورة</button>
+</header>
+<div class="header-stitch"></div>
+
+<!-- ============ لوحة التحكم ============ -->
+<div class="page active" id="page-dashboard">
+  <div class="hero">
+    <div class="h-day" id="todayLabel"></div>
+    <div class="h-title">لوحة التحكم</div>
+    <div class="h-row" id="heroPills"></div>
+  </div>
+
+  <div class="stats-grid" id="dashCounts"></div>
+
+  <div class="section-label">الإحصائيات المالية</div>
+  <div id="dashFinanceLock" class="card lock-note">
+    <div><svg class="sv" style="font-size:40px;color:var(--gold-3)"><use href="#i-lock"></use></svg></div>
+    <p style="font-weight:800;color:var(--brown)">الأرباح والإحصائيات المالية محمية بكلمة مرور</p>
+    <button class="btn gold" onclick="askPassword('dashboard')">عرض الإحصائيات المالية</button>
+  </div>
+  <div class="stats-grid" id="dashFinance" style="display:none"></div>
+
+  <div class="section-label">التنبيهات الذكية</div>
+  <div id="dashAlerts"></div>
+</div>
+
+<!-- ============ الفواتير ============ -->
+<div class="page" id="page-invoices">
+  <div class="page-title">الفواتير <button class="btn sm gold" onclick="openInvoiceForm()">+ فاتورة جديدة</button></div>
+  <div class="search-bar">
+    <span class="ic"><svg class="sv"><use href="#i-search"></use></svg></span>
+    <input type="text" id="invSearch" placeholder="بحث بالاسم أو رقم الجوال أو رقم الفاتورة..." oninput="renderInvoices()">
+  </div>
+  <div class="chips" id="invFilterChips" style="margin-bottom:12px">
+    <button class="chip selected" data-f="الكل" onclick="setInvFilter(this)">الكل</button>
+    <button class="chip" data-f="تحت التنفيذ" onclick="setInvFilter(this)">تحت التنفيذ</button>
+    <button class="chip" data-f="جاهز" onclick="setInvFilter(this)">جاهز</button>
+    <button class="chip" data-f="تم التسليم" onclick="setInvFilter(this)">تم التسليم</button>
+  </div>
+  <div id="invList"></div>
+</div>
+
+<!-- ============ نموذج الفاتورة ============ -->
+<div class="page" id="page-invoice-form">
+  <div class="page-title"><span id="invFormTitle">فاتورة جديدة</span>
+    <button class="btn sm outline" onclick="showPage('page-invoices')">✕ إلغاء</button>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-doc"></use></svg> بيانات الفاتورة</h3>
+    <div class="grid-3">
+      <div class="field"><label>رقم الفاتورة</label><div class="readonly-box" id="fNumber">—</div></div>
+      <div class="field"><label>التاريخ</label><div class="readonly-box" id="fDate">—</div></div>
+      <div class="field"><label>اليوم</label><div class="readonly-box" id="fDay">—</div></div>
+    </div>
+    <div class="field"><label>موعد التسليم</label><input type="date" id="fDelivery"></div>
+    <div class="field"><label>اسم العميل</label>
+      <div class="row-inline">
+        <input type="text" id="fCustName" list="custList" placeholder="اسم العميل" oninput="onCustomerTyped()">
+        <button class="btn sm cream" onclick="pickFromContacts()" title="جهات الاتصال"><svg class="sv"><use href="#i-contact"></use></svg></button>
+      </div>
+      <datalist id="custList"></datalist>
+      <div class="hint" id="custHint"></div>
+    </div>
+    <div class="field"><label>رقم الجوال</label><input type="tel" id="fCustPhone" placeholder="05xxxxxxxx"></div>
+
+    <div class="field"><label>نوع التفصيل</label>
+      <div class="chips" id="cutTypeChips">
+        <button class="chip" data-v="سعودي">سعودي</button>
+        <button class="chip" data-v="قطري">قطري</button>
+        <button class="chip" data-v="إماراتي">إماراتي</button>
+        <button class="chip" data-v="أخرى">أخرى</button>
+      </div>
+      <input type="text" id="fCutOther" placeholder="اكتب نوع التفصيل..." style="display:none;margin-top:8px" class="chip-other">
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-cash"></use></svg> بيانات الدفع</h3>
+    <div class="grid-2">
+      <div class="field"><label>السعر</label><input type="number" id="fPrice" min="0" step="0.01" oninput="calcPay()"></div>
+      <div class="field"><label>المدفوع</label><input type="number" id="fPaid" min="0" step="0.01" oninput="calcPay()"></div>
+    </div>
+    <div class="grid-2">
+      <div class="field"><label>المتبقي</label><div class="readonly-box" id="fRemain">0</div></div>
+      <div class="field"><label>حالة الدفع</label><div class="readonly-box" id="fPayStatus">—</div></div>
+    </div>
+    <div class="field"><label>العملة</label>
+      <div class="chips" id="currChips">
+        <button class="chip selected" data-v="SAR">ريال سعودي</button>
+        <button class="chip" data-v="YER">ريال يمني</button>
+        <button class="chip" data-v="USD">دولار أمريكي</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-ruler"></use></svg> القياسات</h3>
+    <div class="hint" style="margin-bottom:8px" id="measHint"></div>
+    <div id="measRows"></div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-scissors"></use></svg> تفاصيل القصات</h3>
+
+    <div class="field"><label>1) نوع الرقبة</label>
+      <div class="chips" id="neckMain">
+        <button class="chip" data-v="قلاب">قلاب</button>
+        <button class="chip" data-v="سادة">سادة</button>
+      </div>
+      <div class="sub-block" id="neckQallab" style="display:none">
+        <div class="sb-title">نوع القلاب</div>
+        <div class="chips" id="neckQallabStyle">
+          <button class="chip" data-v="ملكي">ملكي</button>
+          <button class="chip" data-v="فرنسي">فرنسي</button>
+        </div>
+        <div class="sb-title" style="margin-top:8px">الحجم</div>
+        <div class="chips" id="neckQallabSize">
+          <button class="chip" data-v="كبير">كبير</button>
+          <button class="chip" data-v="وسط">وسط</button>
+          <button class="chip" data-v="صغير">صغير</button>
+        </div>
+      </div>
+      <div class="sub-block" id="neckSada" style="display:none">
+        <div class="sb-title">خيارات السادة (يسمح باختيار خيارين)</div>
+        <div class="chips multi" id="neckSadaOpts" data-max="2">
+          <button class="chip" data-v="صغير">صغير</button>
+          <button class="chip" data-v="كبير">كبير</button>
+          <button class="chip" data-v="زر مخفي">زر مخفي</button>
+          <button class="chip" data-v="زر ظاهر">زر ظاهر</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="field"><label>2) نوع الجيب <small style="color:var(--muted)">(يسمح باختيار خيارين)</small></label>
+      <div class="chips multi" id="pocketOpts" data-max="2">
+        <button class="chip" data-v="مربع">مربع</button>
+        <button class="chip" data-v="حربة">حربة</button>
+        <button class="chip" data-v="مخفي">مخفي</button>
+        <button class="chip" data-v="ظاهر">ظاهر</button>
+      </div>
+    </div>
+
+    <div class="field"><label>3) نوع الأكمام</label>
+      <div class="chips" id="sleeveOpts">
+        <button class="chip" data-v="سادة">سادة</button>
+        <button class="chip" data-v="كبك">كبك</button>
+      </div>
+      <div class="sub-block" id="kabkBlock" style="display:none">
+        <div class="sb-title">4) الكبك (يسمح باختيار خيارين)</div>
+        <div class="chips multi" id="kabkOpts" data-max="2">
+          <button class="chip" data-v="قماش">قماش</button>
+          <button class="chip" data-v="حشوة">حشوة</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="field"><label>5) تصميم الجبزور</label>
+      <div class="sub-block">
+        <div class="sb-title">أزرار</div>
+        <div class="chips" id="jabzButtons">
+          <button class="chip" data-v="مخفي">مخفي</button>
+          <button class="chip" data-v="ظاهر">ظاهر</button>
+        </div>
+        <div class="sb-title" style="margin-top:8px">شرة</div>
+        <div class="chips" id="jabzShara">
+          <button class="chip" data-v="مخفي">مخفي</button>
+          <button class="chip" data-v="ظاهر">ظاهر</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="field"><label>نوع القماش</label><input type="text" id="fFabricType"></div>
+      <div class="field"><label>لون القماش</label><input type="text" id="fFabricColor"></div>
+    </div>
+
+    <div class="field"><label>📷 صورة القماش أو التصميم (اختياري)</label>
+      <input type="file" id="fFabricImg" accept="image/*" onchange="loadFabricImg(this)">
+      <img id="fabricPreview" class="img-preview" style="display:none">
+      <button class="btn sm danger" id="fabricRemove" style="display:none;margin-top:6px" onclick="removeFabricImg()">حذف الصورة</button>
+    </div>
+
+    <div class="field"><label>الملاحظات الخاصة</label><textarea id="fNotes" placeholder="أي ملاحظات إضافية على الطلب..."></textarea></div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn gold block" style="font-size:18px" onclick="saveInvoice()">💾 حفظ الفاتورة</button>
+  </div>
+</div>
+
+<!-- ============ العملاء ============ -->
+<div class="page" id="page-customers">
+  <div class="page-title">العملاء <button class="btn sm gold" onclick="openCustomerForm()">+ عميل جديد</button></div>
+  <div class="search-bar">
+    <span class="ic"><svg class="sv"><use href="#i-search"></use></svg></span>
+    <input type="text" id="custSearch" placeholder="بحث بالاسم أو رقم الجوال..." oninput="renderCustomers()">
+  </div>
+  <div class="chips" style="margin-bottom:12px">
+    <button class="chip selected" id="custFilterAll" onclick="custVipOnly=false;this.classList.add('selected');document.getElementById('custFilterVip').classList.remove('selected');renderCustomers()">كل العملاء</button>
+    <button class="chip" id="custFilterVip" onclick="custVipOnly=true;this.classList.add('selected');document.getElementById('custFilterAll').classList.remove('selected');renderCustomers()">⭐ العملاء المميزون</button>
+  </div>
+  <div id="custList2"></div>
+</div>
+
+<!-- ============ الموردون ============ -->
+<div class="page" id="page-suppliers">
+  <div class="page-title">الموردون <button class="btn sm gold" onclick="openSupplierForm()">+ مورد جديد</button></div>
+  <div id="supList"></div>
+</div>
+
+<!-- ============ المزيد ============ -->
+<div class="page" id="page-more">
+  <div class="page-title">المزيد</div>
+  <div class="more-links">
+    <button onclick="openAccounts()"><span class="ic"><svg class="sv"><use href="#i-wallet"></use></svg></span> الحسابات</button>
+    <button onclick="showPage('page-reports');renderReport()"><span class="ic"><svg class="sv"><use href="#i-chart"></use></svg></span> التقارير</button>
+    <button onclick="showPage('page-settings');renderSettings()"><span class="ic"><svg class="sv"><use href="#i-gear"></use></svg></span> الإعدادات</button>
+    <button onclick="showPage('page-backup')"><span class="ic"><svg class="sv"><use href="#i-box"></use></svg></span> النسخ الاحتياطي</button>
+  </div>
+</div>
+
+<!-- ============ الحسابات ============ -->
+<div class="page" id="page-accounts">
+  <div class="page-title">الحسابات <button class="btn sm outline" onclick="showPage('page-more')">رجوع</button></div>
+  <div class="stats-grid" id="accStats"></div>
+  <div class="btn-row" style="margin:12px 0">
+    <button class="btn cream" onclick="openExpenseForm()">+ إضافة مصروف</button>
+  </div>
+  <div class="section-label">المصروفات</div>
+  <div id="expList"></div>
+  <div class="section-label">كشف الحساب</div>
+  <div id="statementList" style="overflow-x:auto"></div>
+</div>
+
+<!-- ============ التقارير ============ -->
+<div class="page" id="page-reports">
+  <div class="page-title">التقارير <button class="btn sm outline" onclick="showPage('page-more')">رجوع</button></div>
+  <div class="chips" id="repChips" style="margin-bottom:12px">
+    <button class="chip selected" data-v="يومي" onclick="setRep(this)">يومي</button>
+    <button class="chip" data-v="أسبوعي" onclick="setRep(this)">أسبوعي</button>
+    <button class="chip" data-v="شهري" onclick="setRep(this)">شهري</button>
+    <button class="chip" data-v="سنوي" onclick="setRep(this)">سنوي</button>
+  </div>
+  <div id="repContent"></div>
+  <button class="btn gold block" style="margin-top:12px" onclick="exportReportPDF()">📄 تصدير التقرير PDF</button>
+</div>
+
+<!-- ============ الإعدادات ============ -->
+<div class="page" id="page-settings">
+  <div class="page-title">الإعدادات <button class="btn sm outline" onclick="showPage('page-more')">رجوع</button></div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-pin"></use></svg> بيانات المحل</h3>
+    <div class="field"><label>اسم المحل</label><input type="text" id="setShopName"></div>
+    <div class="field"><label>رقم جوال المحل</label><input type="tel" id="setShopPhone"></div>
+    <div class="field"><label>عنوان المحل</label><input type="text" id="setShopAddr"></div>
+    <div class="field"><label>شعار المحل</label>
+      <input type="file" id="setLogo" accept="image/*" onchange="loadSettingImg(this,'logo')">
+      <img id="logoPreview" class="img-preview" style="display:none">
+    </div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-coins"></use></svg> أسعار الصرف (مقابل الريال اليمني)</h3>
+    <div class="field"><label>1 دولار أمريكي = كم ريال يمني؟</label><input type="number" id="setRateUSD" step="0.01"></div>
+    <div class="field"><label>1 ريال سعودي = كم ريال يمني؟</label><input type="number" id="setRateSAR" step="0.01"></div>
+    <div class="hint">تُستخدم الأسعار لتوحيد الإحصائيات المالية بالريال اليمني.</div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-grid"></use></svg> رموز QR للفاتورة</h3>
+    <div class="field"><label>QR واتساب</label>
+      <input type="file" id="setWaQR" accept="image/*" onchange="loadSettingImg(this,'waQR')">
+      <img id="waQRPreview" class="img-preview" style="display:none">
+    </div>
+    <div class="field"><label>QR إنستغرام</label>
+      <input type="file" id="setIgQR" accept="image/*" onchange="loadSettingImg(this,'igQR')">
+      <img id="igQRPreview" class="img-preview" style="display:none">
+    </div>
+    <div class="hint">تُحدَّث الفاتورة تلقائياً عند تغيير أي رمز QR.</div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-cloud"></use></svg> المزامنة عبر الإنترنت (بين الجوالين)</h3>
+    <div class="field"><label>حالة المزامنة</label>
+      <div class="chips" id="syncEnableChips">
+        <button class="chip" data-v="on">مفعّلة</button>
+        <button class="chip selected" data-v="off">متوقفة</button>
+      </div>
+    </div>
+    <div class="field"><label>رابط مشروع Supabase</label><input type="text" id="syncUrl" placeholder="https://xxxxx.supabase.co" style="direction:ltr;text-align:left"></div>
+    <div class="field"><label>مفتاح anon العام (Project API Key)</label><input type="text" id="syncKey" placeholder="eyJhbGciOi..." style="direction:ltr;text-align:left"></div>
+    <div class="field"><label>معرّف المحل — اكتب نفس الكلمة في الجوالين</label><input type="text" id="syncShop" placeholder="مثال: azrar-shop-1"></div>
+    <div class="readonly-box" id="syncStatus" style="font-size:13.5px">المزامنة متوقفة</div>
+    <div class="btn-row" style="margin-top:10px">
+      <button class="btn gold" onclick="saveSyncSettings()">حفظ وتشغيل المزامنة</button>
+      <button class="btn cream" onclick="manualSync()">مزامنة الآن</button>
+    </div>
+    <div class="hint">التحديث تلقائي وفوري بين الجوالين عند توفر الإنترنت. خطوات إنشاء حساب Supabase المجاني وكود SQL المطلوب موجودة في ملف README المرفق.</div>
+  </div>
+
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-lock"></use></svg> كلمة مرور لوحة التحكم</h3>
+    <div class="field"><label>كلمة المرور الحالية</label><input type="password" id="setPassOld"></div>
+    <div class="field"><label>كلمة المرور الجديدة</label><input type="password" id="setPassNew"></div>
+    <button class="btn outline" onclick="changePassword()">تغيير كلمة المرور</button>
+    <div class="hint">كلمة المرور الافتراضية: 0000</div>
+  </div>
+
+  <button class="btn gold block" onclick="saveSettings()">💾 حفظ الإعدادات</button>
+</div>
+
+<!-- ============ النسخ الاحتياطي ============ -->
+<div class="page" id="page-backup">
+  <div class="page-title">النسخ الاحتياطي <button class="btn sm outline" onclick="showPage('page-more')">رجوع</button></div>
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-box"></use></svg> إنشاء نسخة احتياطية</h3>
+    <p style="font-size:14px;color:var(--muted)">يتم حفظ جميع البيانات (العملاء، الفواتير، الموردين، الحسابات، الإعدادات) في ملف واحد يمكن نقله إلى جهاز آخر.</p>
+    <button class="btn gold block" onclick="exportBackup()">تصدير النسخة الاحتياطية</button>
+  </div>
+  <div class="card">
+    <h3><svg class="sv"><use href="#i-box"></use></svg> استعادة نسخة احتياطية</h3>
+    <p style="font-size:14px;color:var(--muted)">اختر ملف النسخة الاحتياطية لاستعادة جميع البيانات. سيتم استبدال البيانات الحالية.</p>
+    <input type="file" id="backupFile" accept=".json,application/json">
+    <button class="btn danger block" style="margin-top:10px" onclick="importBackup()">استعادة البيانات</button>
+  </div>
+</div>
+
+<!-- ============ شريط التنقل ============ -->
+<nav class="bottom-nav">
+  <button class="active" data-page="page-dashboard" onclick="navTo(this)"><span class="ic"><svg class="sv"><use href="#i-home"></use></svg></span>الرئيسية</button>
+  <button data-page="page-invoices" onclick="navTo(this)"><span class="ic"><svg class="sv"><use href="#i-receipt"></use></svg></span>الفواتير</button>
+  <button data-page="page-customers" onclick="navTo(this)"><span class="ic"><svg class="sv"><use href="#i-users"></use></svg></span>العملاء</button>
+  <button data-page="page-suppliers" onclick="navTo(this)"><span class="ic"><svg class="sv"><use href="#i-truck"></use></svg></span>الموردون</button>
+  <button data-page="page-more" onclick="navTo(this)"><span class="ic"><svg class="sv"><use href="#i-grid"></use></svg></span>المزيد</button>
+</nav>
+
+<!-- ============ نافذة كلمة المرور ============ -->
+<div class="modal-back" id="mdlPass">
+  <div class="modal" style="max-width:400px">
+    <h3>🔒 أدخل كلمة المرور <button class="close-x" onclick="closeModal('mdlPass')">✕</button></h3>
+    <div class="field"><input type="password" id="passInput" placeholder="كلمة المرور" style="text-align:center;font-size:20px"></div>
+    <button class="btn gold block" onclick="checkPassword()">تأكيد</button>
+  </div>
+</div>
+
+<!-- ============ نافذة عميل ============ -->
+<div class="modal-back" id="mdlCustomer">
+  <div class="modal">
+    <h3 id="custFormTitle">عميل جديد <button class="close-x" onclick="closeModal('mdlCustomer')">✕</button></h3>
+    <div class="field"><label>الاسم</label>
+      <div class="row-inline">
+        <input type="text" id="cName">
+        <button class="btn sm cream" onclick="pickFromContactsCustomer()"><svg class="sv"><use href="#i-contact"></use></svg></button>
+      </div>
+    </div>
+    <div class="field"><label>رقم الجوال</label><input type="tel" id="cPhone"></div>
+    <div class="field"><label>المدينة</label><input type="text" id="cCity"></div>
+    <div class="field"><label>العنوان</label><input type="text" id="cAddress"></div>
+    <div class="field"><label>الملاحظات</label><textarea id="cNotes"></textarea></div>
+    <button class="btn gold block" onclick="saveCustomer()">💾 حفظ العميل</button>
+  </div>
+</div>
+
+<!-- ============ نافذة مورد ============ -->
+<div class="modal-back" id="mdlSupplier">
+  <div class="modal">
+    <h3 id="supFormTitle">مورد جديد <button class="close-x" onclick="closeModal('mdlSupplier')">✕</button></h3>
+    <div class="field"><label>اسم المورد</label><input type="text" id="sName"></div>
+    <div class="field"><label>اسم المؤسسة</label><input type="text" id="sOrg"></div>
+    <div class="field"><label>رقم الجوال</label><input type="tel" id="sPhone"></div>
+    <div class="field"><label>الملاحظات</label><textarea id="sNotes"></textarea></div>
+    <button class="btn gold block" onclick="saveSupplier()">💾 حفظ المورد</button>
+  </div>
+</div>
+
+<!-- ============ نافذة عملية مورد ============ -->
+<div class="modal-back" id="mdlSupTx">
+  <div class="modal">
+    <h3 id="supTxTitle">عملية جديدة <button class="close-x" onclick="closeModal('mdlSupTx')">✕</button></h3>
+    <div class="field"><label>نوع العملية</label>
+      <div class="chips" id="supTxType">
+        <button class="chip selected" data-v="شراء">🛒 شراء (يزيد المستحق)</button>
+        <button class="chip" data-v="دفعة">💵 دفعة (تسديد)</button>
+      </div>
+    </div>
+    <div class="field"><label>الوصف</label><input type="text" id="stDesc" placeholder="مثال: أقمشة صيفية"></div>
+    <div class="field"><label>المبلغ (ريال يمني)</label><input type="number" id="stAmount" min="0" step="0.01"></div>
+    <button class="btn gold block" onclick="saveSupTx()">💾 حفظ العملية</button>
+  </div>
+</div>
+
+<!-- ============ نافذة مصروف ============ -->
+<div class="modal-back" id="mdlExpense">
+  <div class="modal">
+    <h3>مصروف جديد <button class="close-x" onclick="closeModal('mdlExpense')">✕</button></h3>
+    <div class="field"><label>الوصف</label><input type="text" id="eDesc" placeholder="مثال: إيجار، كهرباء، خيوط..."></div>
+    <div class="field"><label>المبلغ (ريال يمني)</label><input type="number" id="eAmount" min="0" step="0.01"></div>
+    <div class="field"><label>التاريخ</label><input type="date" id="eDate"></div>
+    <button class="btn gold block" onclick="saveExpense()">💾 حفظ المصروف</button>
+  </div>
+</div>
+
+<!-- ============ نافذة عرض الفاتورة ============ -->
+<div class="modal-back" id="mdlInvoice">
+  <div class="modal" style="max-width:820px">
+    <h3>الفاتورة <button class="close-x" onclick="closeModal('mdlInvoice')">✕</button></h3>
+    <div class="paper-wrap"><div id="invView"></div></div>
+    <div class="section-label">الحالة</div>
+    <div class="chips" id="invStateChips"></div>
+    <div class="section-label">الإجراءات</div>
+    <div class="btn-row">
+      <button class="btn" onclick="openPrintOptions()">🖨️ طباعة</button>
+      <button class="btn gold" onclick="quickPDF()">📄 PDF</button>
+      <button class="btn cream" onclick="shareInvoice('share')">📤 مشاركة</button>
+    </div>
+    <div class="btn-row" style="margin-top:8px">
+      <button class="btn ok" onclick="shareInvoice('whatsapp')">🟢 واتساب</button>
+      <button class="btn outline" onclick="shareInvoice('bluetooth')">📶 بلوتوث</button>
+      <button class="btn outline" onclick="shareInvoice('wifi')">📡 Wi-Fi</button>
+    </div>
+    <div class="btn-row" style="margin-top:8px">
+      <button class="btn cream" onclick="editCurrentInvoice()">✏️ تعديل</button>
+      <button class="btn danger" onclick="deleteCurrentInvoice()">🗑️ حذف</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ نافذة خيارات الطباعة ============ -->
+<div class="modal-back" id="mdlPrintOpts">
+  <div class="modal">
+    <h3>🖨️ إعدادات الطباعة <button class="close-x" onclick="closeModal('mdlPrintOpts')">✕</button></h3>
+    <div class="field"><label>حجم الورق</label>
+      <div class="chips" id="poSize">
+        <button class="chip selected" data-v="A4">A4</button>
+        <button class="chip" data-v="A5">A5</button>
+        <button class="chip" data-v="A6">A6</button>
+      </div>
+    </div>
+    <div class="field"><label>اتجاه الطباعة</label>
+      <div class="chips" id="poOrient">
+        <button class="chip selected" data-v="portrait">↕ عمودي</button>
+        <button class="chip" data-v="landscape">↔ أفقي</button>
+      </div>
+    </div>
+    <div class="field"><label>خيارات الطباعة</label>
+      <div class="chips" id="poContent">
+        <button class="chip selected" data-v="full">الفاتورة كاملة</button>
+        <button class="chip" data-v="meas">القياسات فقط</button>
+      </div>
+    </div>
+    <button class="btn gold block" onclick="openPreview()">👁️ معاينة قبل الطباعة</button>
+  </div>
+</div>
+
+<!-- ============ نافذة المعاينة ============ -->
+<div class="modal-back" id="mdlPreview">
+  <div class="modal" style="max-width:900px">
+    <h3>👁️ معاينة الطباعة <button class="close-x" onclick="closeModal('mdlPreview')">✕</button></h3>
+    <div class="zoom-bar">
+      <button onclick="zoomPreview(-0.1)">−</button>
+      <span class="zv" id="zoomVal">100%</span>
+      <button onclick="zoomPreview(0.1)">+</button>
+    </div>
+    <div class="paper-wrap" id="previewWrap"><div id="previewHolder"></div></div>
+    <div class="btn-row" style="margin-top:12px">
+      <button class="btn" onclick="doDirectPrint()">🖨️ طباعة مباشرة</button>
+      <button class="btn gold" onclick="doSavePDF()">📄 حفظ PDF</button>
+    </div>
+    <div class="btn-row" style="margin-top:8px">
+      <button class="btn ok" onclick="doShare('whatsapp')">🟢 واتساب</button>
+      <button class="btn outline" onclick="doShare('bluetooth')">📶 بلوتوث</button>
+      <button class="btn outline" onclick="doShare('wifi')">📡 Wi-Fi</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<div id="printHolder" style="position:fixed;top:-10000px;right:0"></div>
+
+<script src="libs/supabase.js"></script>
+<script src="libs/html2canvas.min.js"></script>
+<script src="libs/jspdf.umd.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
