@@ -1,0 +1,8 @@
+{
+  "appId": "com.hsnpmt.tailorshop",
+  "appName": "أزرار",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
